@@ -1,0 +1,19 @@
+.social-media {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -16px;
+
+  &__item {
+    margin-right: 16px;
+  }
+  &__link {
+    @extend %link;
+    display: block;
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+}

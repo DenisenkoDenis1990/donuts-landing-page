@@ -1,0 +1,30 @@
+.contacts {
+  padding-top: 32px;
+  //   padding-bottom: 32px;
+
+  &__text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+}
+.contacts-form {
+  margin-bottom: 32px;
+  &__input {
+    @extend %input;
+    border-bottom: 1px solid #ab816c;
+    margin-bottom: 20px;
+    width: 100%;
+    &:last-child {
+      margin-bottom: 32px;
+    }
+    &::placeholder {
+      color: rgba(171, 129, 108, 0.5);
+    }
+  }
+  &__button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

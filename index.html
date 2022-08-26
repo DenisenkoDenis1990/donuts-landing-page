@@ -1,0 +1,450 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Montserrat:ital,wght@0,400;0,500;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/main.min.css" rel="stylesheet" />
+
+    <title>Donuts Masterclass</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="header-conteiner">
+        <div class="navigation-conteiner">
+          <a href="#" class="header-logo-link"
+            ><img
+              class="header-logo"
+              srcset="
+                ./images/header-logo.png    1x,
+                ./images/header-logo-2x.png 2x
+              "
+              src="./images/header-logo.png"
+              alt="Logo"
+            />
+          </a>
+          <button type="button" class="navigation__menu-button">
+            <svg class="navigation__button-icon">
+              <use
+                class="navigation__button-icon--menu"
+                href="images/symbol-defs.svg#menu-icon"
+              ></use>
+              <use
+                class="navigation__button-icon--close"
+                href="images/symbol-defs.svg#close-icon"
+              ></use>
+            </svg>
+          </button>
+        </div>
+        <div class="navigation-conteiner-mobile">
+          <a class="mobile-menu-logo">
+            <img
+              srcset="./images/menu-logo.png 1x, ./images/menu-logo-2x.png 2x"
+              src="./images/menu-logo.png"
+              alt="logo"
+            />
+          </a>
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">About us</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Program</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Reviews</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="#">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <img
+          srcset="./images/header-bg.png 1x, ./images/header-bg-2x.png 2x"
+          src="./images/header-bg.png"
+          alt="Background"
+          class="background-image-top"
+        />
+        <img
+          srcset="
+            ./images/donuts-header.png    1x,
+            ./images/donuts-header-2x.png 2x
+          "
+          src="./images/donuts-header.png"
+          alt="donuts"
+          class="donuts-image"
+        />
+      </div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="conteiner">
+          <h1 class="hero-title">Donut Masterclass with the Donut King</h1>
+          <p class="hero__subtitle">Hosted by Eva Green</p>
+          <button type="button" class="hero__button">Register</button>
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a href="#" class="social-media__link"
+                ><svg class="social-media__icon">
+                  <use href="images/symbol-defs.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link"
+                ><svg class="social-media__icon">
+                  <use href="images/symbol-defs.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link"
+                ><svg class="social-media__icon">
+                  <use href="images/symbol-defs.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <img
+            srcset="./images/spoon.png 1x, ./images/spoon-2x.png 2x"
+            src="./images/spoon.png"
+            alt="Spoon"
+            class="spoon-image"
+          />
+        </div>
+      </section>
+      <section class="about-us">
+        <div class="conteiner">
+          <img
+            srcset="
+              ./images/coffee-donuts.png    1x,
+              ./images/coffee-donuts-2x.png 2x
+            "
+            src="./images/coffee-donuts.png"
+            alt="Coffee, donuts"
+            class="about-image"
+          />
+          <h2 class="section-title">About us</h2>
+          <p class="about-text">
+            Oh My Donut is the shop which adores tasty deserts and spend hours
+            to create sophisticated donuts which will save the world!
+          </p>
+          <p class="about-text">
+            Eva has been baking since she was six years old and over the last 49
+            years, she has created hundreds of cakes for weddings and has baked
+            for many celebrities. Eva and our shop have received multiple awards
+            & recognition for excellence.
+          </p>
+          <p class="about-text">
+            We are going to teach you how to cook with passion and sparkles in
+            your eyes! We love what we do and believe you will enjoy our cooking
+            atmosphere!
+          </p>
+        </div>
+      </section>
+      <section class="program">
+        <div class="conteiner">
+          <h2 class="section-title">Program</h2>
+          <p class="program__text">
+            Indulge in this immersive sweet treat experience with The Chef Donut
+            Queen in her New York donut shop!
+          </p>
+          <ul class="program__list">
+            <li class="program__list-item">
+              > Make 3 donut flavors of your choice
+            </li>
+            <li class="program__list-item">> Enjoy all-you-can-eat donuts</li>
+            <li class="program__list-item">> A stand up history of donuts</li>
+            <li class="program__list-item">
+              > Cocktail pairings and coffee included
+            </li>
+            <li class="program__list-item">
+              > Photoshoot by professional photographer
+            </li>
+            <li class="program__list-item">
+              > Secret receipt of cooking from Eva
+            </li>
+            <li class="program__list-item">
+              > All products are included in the price
+            </li>
+          </ul>
+          <p class="program__detail-text">
+            Come with your dear people and friends and you will spend an
+            unforgettable time and will become a real professional in donuts
+            cooking!
+          </p>
+          <ul class="program__details-list">
+            <li class="program__details-item">
+              <img
+                srcset="
+                  ./images/donut-cooking.png    1x,
+                  ./images/donut-cooking-2x.png 2x
+                "
+                src="./images/donut-cooking.png"
+                alt="Donut"
+                class="program__details-image"
+              />
+              <h3 class="program__details-subtitle">Type of the event</h3>
+              <p class="program__details-description">Cooking classes</p>
+              <svg class="program__details-icon">
+                <use href="images/symbol-defs.svg#cooking-icon"></use>
+              </svg>
+            </li>
+            <li class="program__details-item">
+              <img
+                srcset="
+                  ./images/donut-guests.png    1x,
+                  ./images/donut-guests-2x.png 2x
+                "
+                src="./images/donut-guests.png"
+                alt="Donut"
+                class="program__details-image"
+              />
+              <h3 class="program__details-subtitle">Number of guests</h3>
+              <p class="program__details-description">1 to 20</p>
+              <svg class="program__details-icon">
+                <use href="images/symbol-defs.svg#guests-icon"></use>
+              </svg>
+            </li>
+            <li class="program__details-item">
+              <img
+                srcset="
+                  ./images/donut-time.png    1x,
+                  ./images/donut-time-2x.png 2x
+                "
+                src="./images/donut-time.png"
+                alt="Donut"
+                class="program__details-image"
+              />
+              <h3 class="program__details-subtitle">Time of the event</h3>
+              <p class="program__details-description">18:30 (2.5 hours)</p>
+              <svg class="program__details-icon">
+                <use href="images/symbol-defs.svg#time-icon"></use>
+              </svg>
+            </li>
+            <li class="program__details-item">
+              <img
+                srcset="
+                  ./images/donut-language.png    1x,
+                  ./images/donut-language-2x.png 2x
+                "
+                src="./images/donut-language.png"
+                alt="Donut"
+                class="program__details-image"
+              />
+              <h3 class="program__details-subtitle">The host speaks</h3>
+              <p class="program__details-description">English, French</p>
+              <svg class="program__details-icon">
+                <use href="images/symbol-defs.svg#language-icon"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="review">
+        <img
+          srcset="./images/review-bg.png 1x, ./images/review-bg-2x.png 2x"
+          src="./images/review-bg.png"
+          alt="Background"
+          class="review-background"
+        />
+        <div class="conteiner">
+          <h2 class="section-title">Reviews</h2>
+          <ul class="customers-list">
+            <li class="customer">
+              <img
+                srcset="./images/john.png 1x, ./images/john-2x.png 2x"
+                src="./images/john.png"
+                alt="John"
+                class="customer__photo"
+              />
+              <img
+                srcset="./images/4-stars.png 1x, ./images/4-stars-2x.png 2x"
+                src="./images/4-stars.png"
+                alt="Rating"
+                class="customer__rating"
+              />
+              <p class="customer__name">John</p>
+            </li>
+            <li class="customer">
+              <img
+                srcset="./images/will.png 1x, ./images/will-2x.png 2x"
+                src="./images/will.png"
+                alt="Will"
+                class="customer__photo"
+              />
+              <img
+                srcset="./images/5-stars.png 1x, ./images/5-stars-2x.png 2x"
+                src="./images/5-stars.png"
+                alt="Rating"
+                class="customer__rating"
+              />
+              <p class="customer__name">Will</p>
+            </li>
+            <li class="customer">
+              <img
+                srcset="./images/elizabeth.png 1x, ./images/elizabeth-2x.png 2x"
+                src="./images/elizabeth.png"
+                alt="Elizabeth"
+                class="customer__photo"
+              />
+              <img
+                srcset="./images/5-stars.png 1x, ./images/5-stars-2x.png 2x"
+                src="./images/5-stars.png"
+                alt="Rating"
+                class="customer__rating"
+              />
+              <p class="customer__name">Elizabeth</p>
+            </li>
+          </ul>
+          <p class="review__text">
+            Last time I have visited a cooking course by Eva I was impressed
+            with the way she explained everything to people. You can be sure you
+            will manage to cook a delicious dish even if it is your first time
+            in the kitchen!
+          </p>
+          <p class="review__text">
+            Thank you so much for the masterclass! Looking forward to the next
+            one and highly recommend it to everyone!
+          </p>
+          <p class="review__paginator">2/15</p>
+        </div>
+      </section>
+      <section class="registration">
+        <div class="conteiner">
+          <div class="registration__conteiner">
+            <h2 class="section-title">Registration</h2>
+            <div class="registration__info">
+              <p class="registration__date">May 23, 11:00<br />New York</p>
+              <p class="registration__price">$ 699</p>
+            </div>
+            <form class="registration-form">
+              <p class="registration-form__text">
+                Apply your personal info for registration
+              </p>
+              <input
+                class="registration-form__input"
+                type="text"
+                placeholder="Your name"
+              />
+              <input
+                class="registration-form__input"
+                type="number"
+                placeholder="Phone number"
+              />
+              <input
+                class="registration-form__input"
+                type="email"
+                placeholder="Email"
+              />
+              <button class="registration-form__button" type="submit">
+                Register
+              </button>
+              <img
+                srcset="
+                  ./images/registration-donut.png    1x,
+                  ./images/registration-donut-2x.png 2x
+                "
+                src="./images/registration-donut.png"
+                alt="Donut"
+                class="registration__donut-img"
+              />
+              <img
+                srcset="./images/confetti.png 1x, ./images/confetti-2x.png 2x"
+                src="./images/confetti.png"
+                alt="Confetti"
+                class="registration__confetti-img"
+              />
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="conteiner">
+          <h2 class="section-title">Contacts</h2>
+          <p class="contacts__text">We will answer any question!</p>
+          <form class="contacts-form">
+            <input
+              class="contacts-form__input"
+              type="email"
+              placeholder="Email"
+            />
+            <input
+              class="contacts-form__input"
+              type="text"
+              placeholder="Type your questions"
+            />
+            <button class="contacts-form__button" type="submit">Send</button>
+          </form>
+          <ul class="social-media">
+            <li class="social-media__item">
+              <a href="#" class="social-media__link"
+                ><svg class="social-media__icon">
+                  <use href="images/symbol-defs.svg#twitter-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link"
+                ><svg class="social-media__icon">
+                  <use href="images/symbol-defs.svg#instagram-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link"
+                ><svg class="social-media__icon">
+                  <use href="images/symbol-defs.svg#facebook-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="conteiner">
+        <ul class="footer-contacts">
+          <li class="footer-contacts__item">
+            <a class="footer-contacts__link" href="tel:(910)222-8855">
+              <svg class="footer-contacts__icon">
+                <use href="images/symbol-defs.svg#phone-icon"></use>
+              </svg>
+              (910)222-8855
+            </a>
+          </li>
+          <li class="footer-contacts__item">
+            <a
+              class="footer-contacts__link"
+              href="https://www.google.com.ua/maps/@40.7127753,-74.2861242,10z/"
+            >
+              <svg class="footer-contacts__icon">
+                <use href="images/symbol-defs.svg#location-icon"></use>
+              </svg>
+              New York
+            </a>
+          </li>
+        </ul>
+        <img
+          srcset="./images/wheat-flour.png 1x, ./images/wheat-flour.png 2x"
+          src="./images/wheat-flour.png"
+          alt="Wheat Flour"
+          class="page-footer__image"
+        />
+      </div>
+    </footer>
+  </body>
+</html>

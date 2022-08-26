@@ -1,0 +1,33 @@
+.footer-contacts {
+  @extend %list;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    @extend %link;
+    color: $textColor;
+  }
+
+  &__icon {
+    width: 13px;
+    height: 13px;
+  }
+}
+.page-footer {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  //   background-image: url("../../images/wheat-flour.png");
+  //   background-position-x: 250px;
+  //   background-repeat: no-repeat;
+  //   background-size: fill;
+  &__image {
+    position: absolute;
+    width: 113px;
+    top: -30px;
+    right: -10%;
+    z-index: -2;
+  }
+}

@@ -1,0 +1,91 @@
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.conteiner {
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $mobileScreen) {
+    width: $mobileScreen;
+  }
+
+  @media screen and (min-width: $tabletScreen) {
+    width: $tabletScreen;
+  }
+
+  @media screen and (min-width: $desktopScreen) {
+    width: $desktopScreen;
+  }
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: $textColor;
+}
+
+.section-title {
+  font-family: "Caveat Brush", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.25;
+  text-align: center;
+  color: $textColor;
+}
+
+h3 {
+  font-family: "Caveat Brush", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.28;
+  text-align: center;
+  color: $textColor;
+}
+
+button {
+  font-family: "Caveat Brush";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.27;
+  text-align: center;
+  color: $buttonTextColor;
+  background-color: $buttonColor;
+  padding: 8px 46px;
+  border-radius: 25px;
+  border-width: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+%link {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+%input {
+  border: none;
+  outline: none;
+}
