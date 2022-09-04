@@ -1,15 +1,40 @@
 .registration {
   padding-top: 32px;
+  // position: relative;
+  @media screen and (min-width: $tabletScreen) {
+    padding-top: 40px;
+  }
+  @media screen and (min-width: $desktopScreen) {
+    padding-top: 60px;
+  }
   &__conteiner {
     padding: 32px 8px;
     background: #fffff9;
     box-shadow: -4px -4px 4px rgba(171, 129, 108, 0.15),
       4px 4px 4px rgba(171, 129, 108, 0.15);
     border-radius: 150px 150px 0px 0px;
+
+    @media screen and (min-width: $tabletScreen) {
+      border-radius: 150px;
+      padding: 40px 60px;
+    }
+    @media screen and (min-width: $desktopScreen) {
+      padding: 54px 105px;
+      margin-left: 110px;
+      margin-right: 110px;
+    }
   }
   &__info {
     margin-top: 20px;
     position: relative;
+    @media screen and (min-width: $tabletScreen) {
+      margin-top: 0;
+      padding-top: 30px;
+      padding-right: 32px;
+    }
+    @media screen and (min-width: $desktopScreen) {
+      padding-top: 0;
+    }
   }
   &__date,
   &__price {
@@ -19,7 +44,26 @@
     line-height: 1.22;
     text-align: center;
     margin-bottom: 28px;
+
+    @media screen and (min-width: $tabletScreen) {
+      text-align: right;
+    }
+    @media screen and (min-width: $desktopScreen) {
+      font-size: 20px;
+      line-height: 1.2;
+    }
   }
+  &__date {
+    @media screen and (min-width: $tabletScreen) {
+      margin-bottom: 32px;
+    }
+  }
+  &__price {
+    @media screen and (min-width: $tabletScreen) {
+      margin-bottom: 0;
+    }
+  }
+
   &__price::after {
     content: "";
     display: inline-block;
@@ -28,13 +72,56 @@
     bottom: -20px;
     left: 0;
     border: 1px solid rgba(171, 129, 108, 0.5);
+    @media screen and (min-width: $tabletScreen) {
+      width: 0px;
+      height: 100%;
+      top: 0;
+      left: 100%;
+      //margin-left: 30px;
+    }
   }
 
   &__donut-img {
     display: none;
+    @media screen and (min-width: $tabletScreen) {
+      display: block;
+      top: -10px;
+      left: 0;
+      position: absolute;
+      width: 196.13px;
+      height: 200.69px;
+      transform: rotate(78.97deg);
+      z-index: -2;
+    }
+
+    @media screen and (min-width: $desktopScreen) {
+      width: 196.13px;
+      height: 200.69px;
+      transform: rotate(69.49deg);
+      top: 50px;
+      left: 120px;
+    }
   }
   &__confetti-img {
     display: none;
+    @media screen and (min-width: $tabletScreen) {
+      display: block;
+      position: absolute;
+      width: 190.93px;
+      height: 345.35px;
+      top: 35%;
+      right: 0;
+      transform: rotate(-47.68deg);
+      z-index: -2;
+    }
+
+    @media screen and (min-width: $desktopScreen) {
+      width: 300.76px;
+      height: 544.01px;
+      right: 10%;
+      top: 27%;
+      transform: rotate(-47.68deg);
+    }
   }
 }
 
@@ -43,6 +130,14 @@
   &__text {
     text-align: center;
     margin-bottom: 20px;
+    @media screen and (min-width: $tabletScreen) {
+      text-align: left;
+      //margin-right: 213px;
+    }
+    @media screen and (min-width: $tabletScreen) {
+      margin-bottom: 13px;
+      //margin-right: 213px;
+    }
   }
   &__input {
     @extend %input;
@@ -60,5 +155,31 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+.registration-wrapper {
+  @media screen and (min-width: $tabletScreen) {
+    display: flex;
+  }
+}
+
+.form-wrapper {
+  @media screen and (min-width: $tabletScreen) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 24px;
+  }
+  @media screen and (min-width: $desktopScreen) {
+    padding-left: 29px;
+  }
+}
+.input-wrapper {
+  @media screen and (min-width: $tabletScreen) {
+    margin-right: 54px;
+  }
+  @media screen and (min-width: $desktopScreen) {
+    margin-right: 23px;
   }
 }

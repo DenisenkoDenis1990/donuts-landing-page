@@ -1,5 +1,8 @@
 .program {
   padding-top: 16px;
+  @media screen and (min-width: $tabletScreen) {
+    padding-top: 77px;
+  }
 
   &__text {
     margin-top: 8px;
@@ -20,6 +23,13 @@
     @extend %list;
     display: flex;
     flex-wrap: wrap;
+    @media screen and (min-width: $tabletScreen) {
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+    @media screen and (min-width: $desktopScreen) {
+      margin-top: 48px;
+    }
   }
 
   &__details-item {
@@ -39,6 +49,24 @@
     &:nth-child(2n) {
       margin-top: 40px;
     }
+    @media screen and (min-width: $tabletScreen) {
+      &:not(:nth-child(2n)) {
+        margin-right: 33px;
+      }
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 16px;
+      }
+    }
+    @media screen and (min-width: $desktopScreen) {
+      padding-top: 65px;
+      padding-bottom: 16px;
+      &:not(:nth-child(2n)) {
+        margin-right: 140px;
+      }
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 80px;
+      }
+    }
   }
 
   &__details-image {
@@ -46,20 +74,59 @@
     position: absolute;
     top: -35px;
     left: 23px;
+    @media screen and (min-width: $desktopScreen) {
+      width: 97px;
+      top: -48px;
+      left: 40px;
+    }
   }
   &__details-subtitle {
     margin-bottom: 4px;
+    @media screen and (min-width: $tabletScreen) {
+      margin-bottom: 16px;
+    }
   }
   &__details-description {
     font-size: 14px;
     line-height: 1.21;
     text-align: center;
     margin-bottom: 8px;
+
+    @media screen and (min-width: $desktopScreen) {
+      font-size: 16px;
+      line-height: 1.25;
+    }
   }
   &__details-icon {
     width: 19px;
     height: 19px;
     margin-left: 55px;
     margin-right: 55px;
+    @media screen and (min-width: $tabletScreen) {
+      width: 21px;
+      height: 21px;
+    }
+    @media screen and (min-width: $desktopScreen) {
+      width: 25px;
+      height: 25px;
+      margin-left: 77px;
+      margin-right: 77px;
+    }
+  }
+}
+
+.program-wrapper {
+  @media screen and (min-width: $tabletScreen) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &-text {
+      width: 80%;
+      padding-right: 32px;
+      @media screen and (min-width: $desktopScreen) {
+        padding-right: 70px;
+      }
+    }
   }
 }

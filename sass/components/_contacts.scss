@@ -1,11 +1,20 @@
 .contacts {
   padding-top: 32px;
   //   padding-bottom: 32px;
+  @media screen and (min-width: $tabletScreen) {
+    padding-top: 78px;
+  }
 
   &__text {
     margin-top: 16px;
     margin-bottom: 16px;
     text-align: center;
+    @media screen and (min-width: $tabletScreen) {
+      margin-top: 20px;
+    }
+    @media screen and (min-width: $desktopScreen) {
+      margin-top: 0;
+    }
   }
 }
 .contacts-form {
@@ -20,6 +29,17 @@
     }
     &::placeholder {
       color: rgba(171, 129, 108, 0.5);
+    }
+    @media screen and (min-width: $tabletScreen) {
+      display: block;
+      margin-bottom: 16px;
+      width: 336px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media screen and (min-width: $tabletScreen) {
+      width: 394px;
+      margin-bottom: 32px;
     }
   }
   &__button {

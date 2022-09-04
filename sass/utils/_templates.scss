@@ -17,10 +17,14 @@
 
   @media screen and (min-width: $tabletScreen) {
     width: $tabletScreen;
+    padding-left: 33px;
+    padding-right: 33px;
   }
 
   @media screen and (min-width: $desktopScreen) {
     width: $desktopScreen;
+    padding-left: 123px;
+    padding-right: 123px;
   }
 }
 
@@ -31,6 +35,9 @@ body {
   font-size: 16px;
   line-height: 1.25;
   color: $textColor;
+  @media screen and (min-width: $desktopScreen) {
+    font-size: 18px;
+  }
 }
 
 .section-title {
@@ -41,6 +48,36 @@ body {
   line-height: 1.25;
   text-align: center;
   color: $textColor;
+
+  &--tab {
+    display: none;
+  }
+
+  @media screen and (min-width: $tabletScreen) {
+    &--about {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+    &--program {
+      text-align: left;
+      margin-bottom: 8px;
+    }
+    &--tab {
+      display: block;
+      margin-bottom: 25px;
+    }
+    &--mob {
+      display: none;
+    }
+  }
+  @media screen and (min-width: $desktopScreen) {
+    font-size: 36px;
+    line-height: 1.81;
+
+    &--tab {
+      margin-bottom: 16px;
+    }
+  }
 }
 
 h3 {
@@ -51,6 +88,10 @@ h3 {
   line-height: 1.28;
   text-align: center;
   color: $textColor;
+  @media screen and (min-width: $desktopScreen) {
+    font-size: 24px;
+    line-height: 1.25;
+  }
 }
 
 button {

@@ -3,6 +3,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media screen and (min-width: $tabletScreen) {
+    padding-right: 60px;
+  }
+  @media screen and (min-width: $desktopScreen) {
+    padding-right: 200px;
+  }
 
   &__link {
     @extend %link;
@@ -23,11 +29,27 @@
   //   background-position-x: 250px;
   //   background-repeat: no-repeat;
   //   background-size: fill;
+  @media screen and (min-width: $tabletScreen) {
+    padding-top: 59px;
+  }
+  @media screen and (min-width: $tabletScreen) {
+    padding-top: 80px;
+  }
   &__image {
     position: absolute;
     width: 113px;
     top: -30px;
     right: -10%;
     z-index: -2;
+    @media screen and (min-width: $tabletScreen) {
+      width: 207px;
+      top: -60px;
+      right: -33px;
+    }
+    @media screen and (min-width: $desktopScreen) {
+      width: 355px;
+      top: -137px;
+      right: -53px;
+    }
   }
 }

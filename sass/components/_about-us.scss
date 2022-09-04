@@ -1,5 +1,13 @@
 .about-image {
   margin-bottom: 16px;
+  @media screen and (min-width: $tabletScreen) {
+    width: calc((100% - 32px) / 2);
+    margin-right: 32px;
+  }
+  @media screen and (min-width: $tabletScreen) {
+    width: calc((100% - 140px) / 2);
+    margin-right: 140px;
+  }
 }
 .about-text {
   margin-bottom: 16px;
@@ -7,4 +15,19 @@
 
 .about-us {
   margin-bottom: -16px;
+}
+
+.about-wrapper {
+  @media screen and (min-width: $tabletScreen) {
+    padding-top: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.about-text-wrapper {
+  @media screen and (min-width: $tabletScreen) {
+    text-align: left;
+  }
 }
