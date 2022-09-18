@@ -33,20 +33,25 @@
               alt="Logo"
             />
           </a>
-          <button type="button" class="navigation__menu-button">
-            <svg class="navigation__button-icon">
+          <button
+            type="button"
+            class="navigation-button"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg class="navigation-button__icon">
               <use
-                class="navigation__button-icon--menu"
+                class="navigation-button__icon--menu"
                 href="images/symbol-defs.svg#menu-icon"
               ></use>
               <use
-                class="navigation__button-icon--close"
+                class="navigation-button__icon--close"
                 href="images/symbol-defs.svg#close-icon"
               ></use>
             </svg>
           </button>
         </div>
-        <div class="navigation-conteiner-mobile">
+        <div class="navigation-conteiner-mobile" data-menu>
           <a class="mobile-menu-logo">
             <img
               srcset="./images/menu-logo.png 1x, ./images/menu-logo-2x.png 2x"
@@ -267,13 +272,13 @@
         </div>
       </section>
       <section class="review">
-        <img
-          srcset="./images/review-bg.png 1x, ./images/review-bg-2x.png 2x"
-          src="./images/review-bg.png"
-          alt="Background"
-          class="review-background"
-        />
-        <div class="conteiner">
+        <div class="review-conteiner">
+          <img
+            srcset="./images/review-bg.png 1x, ./images/review-bg-2x.png 2x"
+            src="./images/review-bg.png"
+            alt="Background"
+            class="review-background"
+          />
           <h2 class="section-title">Reviews</h2>
           <ul class="customers-list">
             <li class="customer">
@@ -465,5 +470,6 @@
         />
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
